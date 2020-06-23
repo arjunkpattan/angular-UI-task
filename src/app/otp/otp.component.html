@@ -1,0 +1,25 @@
+<body>
+    <div class="content">
+        <mat-card class="example-card">
+            <img mat-card-image src="../assets/signup.jpg">
+            <mat-card-content>
+                <div class="container content">
+                    <form [formGroup]="OTPForm" (ngSubmit)="onSubmit()" novalidate>
+                        <div class="form-group">
+                            <p>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Enter OTP</mat-label>
+                                    <input matInput placeholder="OTP" formControlName="otp">
+                                    <mat-icon matSuffix>call</mat-icon>
+                                </mat-form-field>
+                            </p>
+                            <div class="content">
+                                <button mat-raised-button color="primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</body>
